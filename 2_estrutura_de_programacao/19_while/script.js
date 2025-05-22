@@ -1,4 +1,4 @@
-// While é um loop, server para repetir o bloco até ser fechado, no caso esse bloco repete as numerações no console até o x valer 10
+// While é um loop, serve para repetir o bloco até ser fechado, no caso esse bloco repete as numerações no console até o x valer 10
 let x = 10
 while(x > 0) {
     console.log("O x é", x)
