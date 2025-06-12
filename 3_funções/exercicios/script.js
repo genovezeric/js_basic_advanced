@@ -91,9 +91,116 @@ function limiteCaractere(valor) {
     }
     else {
         console.log("Texto dentro do limite")
-    }
+}
 }
 
 limiteCaractere("ABC")
 limiteCaractere("Texto muito longo")
+*/
+
+/* Escreva uma função que receba dois números, o primerio é a base e o segundo a potência;
+   Depois faça essa operação e retorne o resultado
+   
+   function potencia(a,b) {
+    return  Math.pow(a,b)
+}
+
+console.log(potencia(3,2))
+console.log(potencia(10,2))
+*/
+/* Função que decrementa o valor e só imprime número pares
+function decrementa(valor) {
+    for(let i = valor; i >= 0; i--){
+        if (i % 2 == 0) {
+            console.log(i)
+        }
+    }
+}
+
+console.log(decrementa(50))
+console.log(decrementa(20))
+*/
+
+/* Função para verificar a idade e encapsular o resultado em uma variável
+function faixaEtaria(idade){
+    let i = idade;
+    if(i <= 12){
+        return "Criança"
+    }
+    else if (i >= 12 && i <= 24) {
+        return "Jovem"
+    }
+    else {
+        return "Adulto"
+    }
+}
+
+let crianca = faixaEtaria(11)
+let adulto = faixaEtaria(25)
+console.log(crianca)
+console.log(adulto)
+*/
+
+/* Função para analisar se a palavra é um palindromo(identica de trás pra frente)
+function isPalindromo(palavra) {
+    let invertido = palavra.split('').reverse().join('')
+    if (invertido === palavra) {
+        console.log(true)
+    } else {
+        console.log(false)
+    }
+}
+
+isPalindromo("radar")
+isPalindromo("hello")
+*/
+
+/* Função para calcular a média que foi colocada dentro do array
+function calculateAverage(array){
+    let total = 0
+    for (let numero of array) {
+        total += numero
+    }
+    let media = total / array.length
+    return media
+}
+
+console.log(calculateAverage([1,5,10,20]))
+*/
+
+/* Função para inverter string e retornar a string invertida
+function reverseString(sting){
+    let invertido = sting.split('').reverse().join('')
+    return invertido
+}
+
+console.log(reverseString("banana"))
+*/
+
+/* Função contar quantas vogais existem na string
+function countVowels(string){
+    let total = 0
+    for (let letra of string) {
+        let letraMinuscula = letra.toLowerCase()
+        if('aeiou'.includes(letraMinuscula)) {
+            total++
+        }
+    }
+    return total
+}
+
+console.log(countVowels("banana"))
+*/
+/* Função somar somente números pares dentro do array
+function sumEvenNumbers(array){
+    let total = 0 
+    for (let number of array){
+        if(number % 2 === 0){
+            total += number
+        }
+    }
+    return total
+}
+
+console.log(sumEvenNumbers([1,10,15,20,50]))
 */
